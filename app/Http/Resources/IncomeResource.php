@@ -17,8 +17,8 @@ class IncomeResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'amount' => (float) $this->amount,
-            'date'   => optional($this->date)->format('Y-m-d'),
+            'amount' => (int) $this->amount,
+            'date'   => $this->date?->format('Y-m-d'),
         ];
     }
 }

@@ -15,7 +15,7 @@ import expenses from '@/routes/expenses/index.js';
 import incomes from '@/routes/incomes/index.js';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid, PcCase } from 'lucide-react';
+import { LayoutGrid, TrendingDown, PcCase } from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
@@ -27,27 +27,15 @@ const mainNavItems: NavItem[] = [
     {
         title: 'Incomes',
         href: incomes.index(),
-        icon: PcCase,
+        icon: PcCase ,
     },
     {
         title: 'Expenses',
         href: expenses.index(),
-        icon: PcCase,
+        icon: TrendingDown ,
     },
 ];
 
-const footerNavItems: NavItem[] = [
-    {
-        title: 'Repository',
-        href: 'https://github.com/laravel/react-starter-kit',
-        icon: Folder,
-    },
-    {
-        title: 'Documentation',
-        href: 'https://laravel.com/docs/starter-kits#react',
-        icon: BookOpen,
-    },
-];
 
 export function AppSidebar() {
     return (
@@ -68,8 +56,7 @@ export function AppSidebar() {
                 <NavMain items={mainNavItems} />
             </SidebarContent>
 
-            <SidebarFooter>
-                <NavFooter items={footerNavItems} className="mt-auto" />
+              <SidebarFooter>
                 <NavUser />
             </SidebarFooter>
         </Sidebar>

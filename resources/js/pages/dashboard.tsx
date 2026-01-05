@@ -263,7 +263,7 @@ export default function Dashboard({
 
                                 {latest_transactions.data.map((trx) => (
                                     <div
-                                        key={trx.id}
+                                         key={`${trx.type}-${trx.id}`}
                                         className="flex items-center justify-between gap-3"
                                     >
                                         <div className="min-w-0">

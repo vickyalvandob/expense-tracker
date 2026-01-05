@@ -299,7 +299,7 @@ export default function Index({ collection }: Props) {
                     {deleteItem && (
                        <div className="space-y-4 text-sm">
                             {/* Info Card */}
-                            <div className="rounded-lg border bg-background p-4 shadow-sm">
+                            <div className="rounded-lg border bg-background p-4 ">
                                 <div className="grid grid-cols-3 gap-y-2 gap-x-4">
                                     <span className="text-muted-foreground">Source</span>
                                     <span className="col-span-2 font-medium">

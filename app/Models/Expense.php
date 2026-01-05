@@ -18,4 +18,8 @@ class Expense extends Model
     protected $casts = [
         'date' => 'date',
     ];
+
+    protected $attributes = [
+        'amount' => 0,
+    ];
 }

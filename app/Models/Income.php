@@ -16,7 +16,6 @@ class Income extends Model
     ];
 
     protected $casts = [
-        'amount' => 'decimal:2',
         'date'   => 'date',
     ];
 
