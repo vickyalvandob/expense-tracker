@@ -12,6 +12,18 @@ export interface IncomeCollection {
     data: Income[];
 }
 
+export interface Expense {
+    id: number;
+    name: string;
+    amount: number;
+    date: string;
+}
+
+export interface ExpenseCollection {
+    data: Expense[];
+}
+
+
 export interface Auth {
     user: User;
 }

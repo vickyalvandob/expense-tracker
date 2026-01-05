@@ -11,6 +11,7 @@ import {
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
 import { dashboard } from '@/routes';
+import expenses from '@/routes/expenses/index.js';
 import incomes from '@/routes/incomes/index.js';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
@@ -26,6 +27,11 @@ const mainNavItems: NavItem[] = [
     {
         title: 'Incomes',
         href: incomes.index(),
+        icon: PcCase,
+    },
+    {
+        title: 'Expenses',
+        href: expenses.index(),
         icon: PcCase,
     },
 ];

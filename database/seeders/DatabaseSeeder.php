@@ -26,9 +26,9 @@ class DatabaseSeeder extends Seeder
         );
 
         $expense = [
-            ['name' => 'Groceries', 'amount' => 150.75, 'date' => '2024-06-01'],
-            ['name' => 'Utilities', 'amount' => 80.50, 'date' => '2024-06-03'],
-            ['name' => 'Transportation', 'amount' => 60.00, 'date' => '2024-06-05'],
+            ['name' => 'Groceries', 'amount' => 150, 'date' => '2024-06-01'],
+            ['name' => 'Utilities', 'amount' => 80, 'date' => '2024-06-03'],
+            ['name' => 'Transportation', 'amount' => 60, 'date' => '2024-06-05'],
         ];
         Expense::factory()->createMany($expense);
     }

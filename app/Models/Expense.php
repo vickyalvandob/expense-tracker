@@ -7,6 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Expense extends Model
 {
-    /** @use HasFactory<\Database\Factories\ExpenseFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'amount',
+        'date',
+    ];
+
+    protected $casts = [
+        'date' => 'date',
+    ];
 }
